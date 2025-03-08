@@ -23,4 +23,10 @@ and also some imp points in the project.
 
 6- next is the nodemon . this restarts the server whenever the files are saved. like whenever we write something 
    in the index.js it will restart the server adter saving it.
-    
+
+7-after commiting all the imp files or making the initial imp. files we make the folder which contains the 
+  imp. things like contrillers , db (hoow to connect to the database) middle wares etc.
+  we are using the mkdir command to make these folders , this command is used to make the directories. 
+
+8- we added pritier so that the code for all the team looks same and there are no differences in the codes
+   of the different people.
