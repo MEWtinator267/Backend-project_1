@@ -30,3 +30,9 @@ and also some imp points in the project.
 
 8- we added pritier so that the code for all the team looks same and there are no differences in the codes
    of the different people.
+
+9- Now when you have written everthing in yhe env , now to connect to the database we can write the connection
+   function in different type but we use the "ifes => ()() this type os syntax . there merit is that they are 
+   executed instanatly , which is required in database deployment.".This code is written in Index file.
+   As its understandable , always use the async await while writing this function and then use try catch for 
+   error handling.  
