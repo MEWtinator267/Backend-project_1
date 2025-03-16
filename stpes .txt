@@ -35,4 +35,8 @@ and also some imp points in the project.
    function in different type but we use the "ifes => ()() this type os syntax . there merit is that they are 
    executed instanatly , which is required in database deployment.".This code is written in Index file.
    As its understandable , always use the async await while writing this function and then use try catch for 
-   error handling.  
+   error handling.
+
+10-after db connection then we , LISTEN the database . that is done in the index.js page that will 
+   help us run the app.js. then we use app.listen in then() to tell the express from where the connection 
+   is starting and thoroughwhere the data is interchanging like ports and env ect. .  

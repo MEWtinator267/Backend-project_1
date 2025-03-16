@@ -1,3 +1,4 @@
+import { log } from "node:console";
 import connectDB from "./DB/dbConnect.js";
 import dotenv from "dotenv"
 
@@ -6,6 +7,18 @@ dotenv.config({
 })
 
 connectDB()
+.then(()=>{
+    app.listen(process.env.PORT || 8000 , ()=>{   // here the app listens.
+        console.log(`the server is running at ${process.env.PORT}`);
+    })
+    app.on("error",(error)=>{
+        console.log(`error in the db connection`),error;
+    }) 
+})
+.catch((error)=>{
+    console.log("error in connecting",error); // here the error handling is taking place which is written 
+                                              // in the dbconnect folder while calling the mongo. 
+})
 
 
 
