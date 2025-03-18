@@ -39,4 +39,10 @@ and also some imp points in the project.
 
 10-after db connection then we , LISTEN the database . that is done in the index.js page that will 
    help us run the app.js. then we use app.listen in then() to tell the express from where the connection 
-   is starting and thoroughwhere the data is interchanging like ports and env ect. .  
+   is starting and thoroughwhere the data is interchanging like ports and env ect. . 
+
+11-now we make the modals required that make the db structure . before that we made the utils of different kinds.
+   now while working with the modals we installed the aggregate panigate npm for using the aggregate function,
+   and the we installed the bycrypt "the core bcrypt the nodejs one".bcrypt helps in the hashing of the passwords.
+   then we installed the json web token for data encryption and decryption while sending and recieving.
+   
