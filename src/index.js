@@ -1,4 +1,3 @@
-import { log } from "node:console";
 import connectDB from "./DB/dbConnect.js";
 import dotenv from "dotenv"
 

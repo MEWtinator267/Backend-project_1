@@ -45,4 +45,18 @@ and also some imp points in the project.
    now while working with the modals we installed the aggregate panigate npm for using the aggregate function,
    and the we installed the bycrypt "the core bcrypt the nodejs one".bcrypt helps in the hashing of the passwords.
    then we installed the json web token for data encryption and decryption while sending and recieving.
-   
+
+12-after making models and installing those pacakages mentioned above we made some methods for token generation
+   and i have commented that there.
+
+13- now we install the 'cloudnary' for clous storage and the 'multer' as the uploader.
+   there are 2 waysfor file handling. one is to directly take the file from the user throug multer and store
+   directly in the cloudnary , or in industry we first take the file and temporally store in our servers and then upload
+   it to the cloud , but we will skip it and do it the simple way .
+   here we learn about the "FS" the file system of node.js that is inbuilt in the node.it is all written in the 
+   "utils file of upload_content". we can use documentation .
+
+14-we here are learning abiut some of the importants ones , not have to learn all.
+   in utils folder in upload_content file we made the upload function and now we are making use of the multer.
+   The code for uploading using multer can be written directly also whereever we want , but we are going to make 
+   a middleware of it so that it canbe called whenever needed.
