@@ -59,4 +59,16 @@ and also some imp points in the project.
 14-we here are learning abiut some of the importants ones , not have to learn all.
    in utils folder in upload_content file we made the upload function and now we are making use of the multer.
    The code for uploading using multer can be written directly also whereever we want , but we are going to make 
-   a middleware of it so that it canbe called whenever needed.
+   a middleware of it so that it can be called whenever needed.
+
+15-we made the first middleware for the user and made the user router also. here we learnt how we use different code 
+   to direct from one code to another code of the different folder and take use of this shit.
+   Lets write the steps that I understood:-
+   1- as we write npm run dev the script starts and runs the index.js.
+   2- the index.js calls the db connection thus our database is connected.Here we use the '.then' function 
+      on the dbconnect() this helps to use app functions on it.
+      we use the .listen on the app (the app.js) and then we run the system.
+   3-Now as it runs /user is hit then it passes it on to userrouter -> then userrouter has /register and that has
+      .post function -> that calls the register user function in the user controller in the controller folder.
+   4-As the register user had a json reponse , to read that we can use an application that is called the postman.
+   * we will learn about the postman in the coming videos.

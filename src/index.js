@@ -1,14 +1,15 @@
 import connectDB from "./DB/dbConnect.js";
 import dotenv from "dotenv"
+import { app } from "./app.js";
 
 dotenv.config({
-    path : './env'
-})
+    path: './.env'
+});
 
 connectDB()
 .then(()=>{
     app.listen(process.env.PORT || 8000 , ()=>{   // here the app listens.
-        console.log(`the server is running at ${process.env.PORT}`);
+        console.log(`the server is running at ${process.env.PORT}`,`\nIT IS RUNNING PERFECT `);
     })
     app.on("error",(error)=>{
         console.log(`error in the db connection`),error;
