@@ -12,8 +12,7 @@ connectDB()
         console.log(`the server is running at ${process.env.PORT}`,`\nIT IS RUNNING PERFECT `);
     })
     app.on("error",(error)=>{
-        console.log(`error in the db connection`),error;
-    }) 
+        console.log(`Error in the app:`, error);    }) 
 })
 .catch((error)=>{
     console.log("error in connecting",error); // here the error handling is taking place which is written 

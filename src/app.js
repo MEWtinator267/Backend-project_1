@@ -18,7 +18,6 @@ app.use(CookieParser) //used to store and access cookies.
 import userrouter from "./router/user.routes.js"
 
 //routes decleration
-app.use("/users",userrouter)
-
+app.use("/api/v1/users", userrouter);
 
 export {app}
