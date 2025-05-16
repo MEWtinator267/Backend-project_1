@@ -10,20 +10,21 @@ cloudinary.config({
 const uploading = async (filepath)=>{
 
     try {
-        if(!filepath){return null}
+        if(!filepath) return null
         
     const response = await cloudinary.uploader.upload(filepath,{
             resource_type:"auto"  // file uploaded here
         })
+        // now as the file is uploaded sucessfully  console log
     console.log("file uploaded",response.url)
     return response;   
 
     } catch (error) {
-        fs.unlink(uploading) // remove the file from teporary storage if failed
+        fs.unlinkSync(uploading) // remove the file from teporary storage if failed
     }
 }
 
-export {filepath}
+export {uploading}
 
 
 

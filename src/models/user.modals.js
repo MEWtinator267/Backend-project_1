@@ -51,10 +51,10 @@ const userschema = new Schema(
     }
 )
 
-userschema.pre("save",async function(next){  //here a hook is used on the userschema a "pre" hook used to code a code to run before actual code.
+userschema.pre("save",async function(next){  //here a hook is used on the userschema a "pre" hook used to code to run before actual code.
                // here it will run before the save as seen above to hash the password for safety.
     if(!this.ismodified("password")) return next() // here is a if condition so that it dosent run numerous time.
-    this.password = bcrypt.hash(this.password,10)//this. is a keyword that automatically selects the userschema objects. 
+    this.password = await bcrypt.hash(this.password,10)//this. is a keyword that automatically selects the userschema objects. 
 })
 
 // now we can make our own methods to check password is correct of not:-

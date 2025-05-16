@@ -1,3 +1,5 @@
+                                         DOCUMENTATION
+
 here i am going to write the steps i do in this project 
 and also some imp points in the project.
 
@@ -72,3 +74,26 @@ and also some imp points in the project.
       .post function -> that calls the register user function in the user controller in the controller folder.
    4-As the register user had a json reponse , to read that we can use an application that is called the postman.
    * we will learn about the postman in the coming videos.
+
+16- now we will start the regester user with the controller code in it.
+   we have to always think about the steps we want to take when making a new controller like what we need etc.
+   => here are the steps :-
+                  get user details from the frontend. // here we do not have the frontend but will use the postman.
+                  validation.
+                  check is the username exeist // unique.
+                  check for the image, check for the avatar. // here we see the model we created for the user.
+                  upload to the cloudinary
+                  then we create a object as to upload in the db we have to make a object.
+                               (here the syntax is [.create]).
+                  then we remove the password and refresh token from the response. 
+                  check for the user creation.
+                  return response.                
+         in these steps there is no file handling support thus we will be doing the "multer" middleware importing 
+         and making files with its help.
+      now after the use of the multer, we will apply the conditions in the user.controller 
+         here we will use the if else statement for the conditions but can use the advanced JS functions like the
+         "SOME" which can be used with array arguments and answer as true false.  // go to user.controller for code. 
+      while putting checks on the images and avatar we found that in express we have req.body to ask for any ref's
+      multer provides req.files.
+    - now after uploading on the cloud we will make the object and the object is communicated throug the user model.
+      
