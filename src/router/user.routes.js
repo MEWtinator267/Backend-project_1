@@ -1,6 +1,6 @@
 import { Router } from "express"
 import { registeruser } from "../controllers/user.controllers.js"
-import {upload, uploads} from "../middlewares/multer.middleware.js"
+import {upload} from "../middlewares/multer.middleware.js"
 const router = Router()
 
 router.route("/register").post(    //this is the multer middleware, used just before the designation

@@ -13,7 +13,7 @@ const registeruser = asyncHandler( async(req,res)=>{     // refer point 16
     }             
     // now we will write the code to find, if the user exist or not
 
-    const existiense = User.findone({
+    const existiense = await User.findone({
         $or:[{username},{email}]     // $or is the operator    // point 16
     })
     if (existiense) {
